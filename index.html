@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Melo - Software Development &amp; Testing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    :root {
+      --teal-custom: #00A0A0;
+      --teal-custom-darker: #008080;
+      --gray-800: #1a202c;
+      --gray-700: #2d3748;
+      --gray-600: #4a5568;
+      --gray-400: #a0aec0;
+      --gray-300: #cbd5e0;
+      --gray-900: #171923;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--gray-800);
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, var(--gray-700) 0%, var(--gray-800) 100%);
+    }
+    .text-teal-custom {
+      color: var(--teal-custom);
+    }
+    .border-teal-custom {
+      border-color: var(--teal-custom);
+    }
+    .bg-teal-custom {
+      background-color: var(--teal-custom);
+    }
+    .hover-bg-teal-custom-darker:hover {
+      background-color: var(--teal-custom-darker);
+    }
+    .glow-effect {
+      text-shadow: 0 0 15px rgba(0, 160, 160, 0.7);
+    }
+    .card {
+      background-color: var(--gray-700);
+      border-radius: 0.75rem;
+    }
+    .icon-bg {
+      background-color: var(--gray-600);
+    }
+  </style>
+</head>
+<body>
+<div class="min-h-screen flex flex-col">
+<header class="py-6 px-4 sm:px-6 lg:px-8 sticky top-0 z-50 bg-gray-800 bg-opacity-80 backdrop-blur-md shadow-lg">
+<div class="container mx-auto flex justify-between items-center">
+<div class="flex items-center">
+<img alt="Melo company logo" class="h-12 mr-3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ-JqYdoOUG5zYPUz9AvHQU8cvpYZKywbDtOfCueQHSE5FiFIxzVHs3zGfY-XQRG_F0oq7sYv3cEt-EtJy0UjjP322BLVwZMOq81ONNIFiJevkBQEA1HjckT3ECgpdNhAAatVfjXBxcZVlzjolfKOc5jccu-kdQJGTWiHFAgskiUjkA4mOd1_cZAnpd7HeMcq_O4wPFVvcn8wCe7Z9V1EAkjkxrSHZzgKJqmZSLdH66jnmzv3Z4NwrjgJ7cF7LyyczMJ6RWyBFf6ij"/>
+<span class="text-3xl font-bold text-teal-custom glow-effect">Melo</span>
+</div>
+<nav class="hidden md:flex space-x-6">
+<a class="text-gray-300 hover:text-teal-custom transition duration-300" href="#services">Services</a>
+<a class="text-gray-300 hover:text-teal-custom transition duration-300" href="#about">About Us</a>
+<a class="text-gray-300 hover:text-teal-custom transition duration-300" href="#contact">Contact</a>
+</nav>
+<button class="md:hidden text-gray-300 hover:text-teal-custom">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</header>
+<section class="hero-bg text-white py-20 md:py-32 flex-grow">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+                    Innovative <span class="text-teal-custom glow-effect">Software Solutions</span> &amp; <span class="text-teal-custom glow-effect">Rigorous Testing</span>
+</h1>
+<p class="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                    At Melo, we craft exceptional software and ensure its flawless performance. Let's build the future, together.                    <div class="card p-8 transform hover:scale-105 transition duration-300 shadow-xl">
+                      <div class="flex items-center justify-center icon-bg w-16 h-16 rounded-full mb-6">
+                        <span class="material-icons text-teal-custom text-3xl">checklist</span>
+                      </div>
+                      <h3 class="text-2xl font-semibold text-white mb-3">Software Testing &amp; QA</h3>
+                      <p class="text-gray-400">Ensuring your applications are reliable, functional, and secure with our meticulous testing processes.</p>
+                    </div>
+                </p>
+<div class="space-x-4">
+<a class="bg-teal-custom hover-bg-teal-custom-darker text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 text-lg" href="#contact">
+                        Get a Quote
+                    </a>
+<a class="border-2 border-teal-custom text-teal-custom font-semibold py-3 px-8 rounded-lg hover:bg-teal-custom hover:text-white transition duration-300 text-lg" href="#services">
+                        Our Services
+                    </a>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 bg-gray-800" id="services">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl sm:text-4xl font-bold text-center text-white mb-4">Our Expertise</h2>
+<p class="text-center text-gray-400 mb-12 max-w-xl mx-auto">We provide a wide range of software development and testing services tailored to your business needs.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+<div class="card p-8 transform hover:scale-105 transition duration-300 shadow-xl">
+<div class="flex items-center justify-center icon-bg w-16 h-16 rounded-full mb-6">
+<span class="material-icons text-teal-custom text-3xl">code</span>
+</div>
+<h3 class="text-2xl font-semibold text-white mb-3">Custom Software Development</h3>
+<p class="text-gray-400">Building scalable and robust software solutions from scratch, designed to meet your unique requirements.</p>
+</div>
+<div class="card p-8 transform hover:scale-105 transition duration-300 shadow-xl">
+<div class="flex items-center justify-center icon-bg w-16 h-16 rounded-full mb-6">
+<span class="material-icons text-teal-custom text-3xl">checklist</span>
+</div>
+<h3 class="text-2xl font-semibold text-white mb-3">Software Testing &amp; QA</h3>
+<p class="text-gray-400">Ensuring your applications are reliable, functional, and secure with our meticulous testing processes.</p>
+</div>
+<div class="card p-8 transform hover:scale-105 transition duration-300 shadow-xl">
+<div class="flex items-center justify-center icon-bg w-16 h-16 rounded-full mb-6">
+<span class="material-icons text-teal-custom text-3xl">phonelink_setup</span>
+</div>
+<h3 class="text-2xl font-semibold text-white mb-3">Mobile App Development</h3>
+<p class="text-gray-400">Creating engaging and high-performance mobile applications for both iOS and Android platforms.</p>
+</div>
+<div class="card p-8 transform hover:scale-105 transition duration-300 shadow-xl">
+<div class="flex items-center justify-center icon-bg w-16 h-16 rounded-full mb-6">
+<span class="material-icons text-teal-custom text-3xl">palette</span>
+</div>
+<h3 class="text-2xl font-semibold text-white mb-3">Brand Design</h3>
+<p class="text-gray-400">Crafting unique and memorable brand identities that resonate with your target audience.</p>
+</div>
+<div class="card p-8 transform hover:scale-105 transition duration-300 shadow-xl">
+<div class="flex items-center justify-center icon-bg w-16 h-16 rounded-full mb-6">
+<span class="material-icons text-teal-custom text-3xl">design_services</span>
+</div>
+<h3 class="text-2xl font-semibold text-white mb-3">UX/UI Wireframes</h3>
+<p class="text-gray-400">Designing intuitive user experiences and interfaces through detailed wireframing and prototyping.</p>
+</div>
+<div class="card p-8 transform hover:scale-105 transition duration-300 shadow-xl">
+<div class="flex items-center justify-center icon-bg w-16 h-16 rounded-full mb-6">
+<span class="material-icons text-teal-custom text-3xl">language</span>
+</div>
+<h3 class="text-2xl font-semibold text-white mb-3">Website Development</h3>
+<p class="text-gray-400">Building responsive, high-performance websites that drive engagement and conversions.</p>
+</div>
+<div class="card p-8 transform hover:scale-105 transition duration-300 shadow-xl">
+<div class="flex items-center justify-center icon-bg w-16 h-16 rounded-full mb-6">
+<span class="material-icons text-teal-custom text-3xl">business_center</span>
+</div>
+<h3 class="text-2xl font-semibold text-white mb-3">Business Systems</h3>
+<p class="text-gray-400">Developing custom business systems and integrations to streamline operations and improve efficiency.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 bg-gray-900" id="about">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+<img alt="Melo team collaborating on a project" class="rounded-lg shadow-2xl w-full h-auto object-cover max-h-96" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsQugLWWUEkUHfPX_lfQBTZPN2RMKG5D1fj3_W1Gzxz4TTG--cu3tWqaEZkaJZ40zWToPEU1thu2Vxoh0wifGvQC6HWGAGkE1WBqocuJ9ifV6XLx5gtu-rboRAxJ6ppUXygQvXjYD2_kgmzyXGQ0onzD_6D0JHrZQBBKSYT_4SrSty7Ye9MWlTqRwwt6Kz8iqWhm6H__9QCKbePE28b1KKcPD7p4OXmxtVu8IbhzsOdvcV3vhC8R44pp71kjgx0544wzXlVGdOfpB-"/>
+</div>
+<div class="md:w-1/2">
+<h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">About Melo</h2>
+<p class="text-gray-400 mb-4 text-lg">
+                            Melo is a passionate team of developers, testers, and innovators dedicated to delivering high-quality software solutions. We believe in the power of technology to transform businesses and are committed to helping our clients achieve their goals.
+                        </p>
+<p class="text-gray-400 text-lg">
+                            Our approach is collaborative and client-focused. We work closely with you to understand your vision and challenges, ensuring that the solutions we provide are perfectly aligned with your needs.
+                        </p>
+<div class="mt-8 flex space-x-4">
+<div class="flex items-center text-teal-custom">
+<span class="material-icons mr-2">verified</span>
+<span class="text-gray-300">Quality Focused</span>
+</div>
+<div class="flex items-center text-teal-custom">
+<span class="material-icons mr-2">groups</span>
+<span class="text-gray-300">Client Centric</span>
+</div>
+<div class="flex items-center text-teal-custom">
+<span class="material-icons mr-2">lightbulb</span>
+<span class="text-gray-300">Innovative Solutions</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 bg-gray-800" id="contact">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl sm:text-4xl font-bold text-center text-white mb-4">Get In Touch</h2>
+<p class="text-center text-gray-400 mb-12 max-w-xl mx-auto">Have a project in mind or just want to learn more? We'd love to hear from you.</p>
+<form class="max-w-xl mx-auto card p-8 shadow-xl">
+<div class="mb-6">
+<label class="block text-gray-300 font-medium mb-2" for="name">Full Name</label>
+<input class="w-full px-4 py-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-custom" id="name" name="name" placeholder="Your Name" type="text"/>
+</div>
+<div class="mb-6">
+<label class="block text-gray-300 font-medium mb-2" for="email">Email Address</label>
+<input class="w-full px-4 py-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-custom" id="email" name="email" placeholder="your.email@example.com" type="email"/>
+</div>
+<div class="mb-6">
+<label class="block text-gray-300 font-medium mb-2" for="message">Message</label>
+<textarea class="w-full px-4 py-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-custom" id="message" name="message" placeholder="How can we help you?" rows="4"></textarea>
+</div>
+<div class="text-center">
+<button class="bg-teal-custom hover-bg-teal-custom-darker text-white font-semibold py-3 px-10 rounded-lg shadow-md transition duration-300 text-lg" type="submit">
+                            Send Message
+                        </button>
+</div>
+</form>
+</div>
+</section>
+<footer class="bg-gray-900 py-12">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+<div class="flex justify-center items-center mb-4">
+<img alt="Melo company logo" class="h-10 mr-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIlPE8CrvLwoGU5ff47_VBtISzNL6_10ZewUCy5Ek4H-AEOKYmtrHE1TnvY0ioWJf202y71eEXF0gbsfZnxrS_that2tWyQW-QWbX4znBGNZnI2-PQIHGChBOY-bxbZrAsCh9CNEescuqi5p9VO4v7G2aPSCVl6Pmt-Bq4Ky5uFbJ7qA3J8gPyMYp4azArF-mUW_j6NdhThS-Mrm-ZDw4WxlyAZxUF5gUHlSBUmQ0pd-KxCemcUYKJeaQjvx-0EpvzrjVr3rne7msU"/>
+<span class="text-2xl font-semibold text-teal-custom">Melo</span>
+</div>
+<p class="mb-2">© 2023 Melo. All rights reserved.</p>
+<p>Crafting Quality Software, Ensuring Flawless Performance.</p>
+<div class="mt-4 flex justify-center space-x-6">
+<a class="text-gray-400 hover:text-teal-custom transition duration-300" href="#">
+<span class="material-icons text-2xl">facebook</span>
+</a>
+<a class="text-gray-400 hover:text-teal-custom transition duration-300" href="#">
+<span class="material-icons text-2xl">add_link</span>
+</a>
+<a class="text-gray-400 hover:text-teal-custom transition duration-300" href="#">
+<span class="material-icons text-2xl">email</span>
+</a>
+</div>
+</div>
+</footer>
+</div>
+<div class="md:hidden fixed inset-0 bg-gray-900 bg-opacity-95 z-50 hidden" id="mobile-menu">
+<div class="flex justify-end p-4">
+<button class="text-gray-300 hover:text-teal-custom" id="close-mobile-menu">
+<span class="material-icons text-3xl">close</span>
+</button>
+</div>
+<nav class="flex flex-col items-center space-y-6 mt-12">
+<a class="text-2xl text-gray-300 hover:text-teal-custom transition duration-300 mobile-menu-link" href="#services">Services</a>
+<a class="text-2xl text-gray-300 hover:text-teal-custom transition duration-300 mobile-menu-link" href="#about">About Us</a>
+<a class="text-2xl text-gray-300 hover:text-teal-custom transition duration-300 mobile-menu-link" href="#contact">Contact</a>
+</nav>
+</div>
+<script>
+    const menuButton = document.querySelector('.md\\:hidden.text-gray-300'); // Hamburger menu button
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+    });
+    closeMobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body></html>
